@@ -193,3 +193,14 @@ pre {
 .tree-viewer-pd{
 	padding:30px;
 }
+
+.logo {
+    width: 2%; /* Adjust the width as needed */
+    /* height: auto; Maintain aspect ratio */
+}
+
+.navbar-brand {
+    width: 0%;
+    height: auto;
+
+}
