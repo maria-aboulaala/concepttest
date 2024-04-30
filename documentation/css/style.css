@@ -172,7 +172,7 @@ pre {
 }
 
 #one span {
-    color: #70a1ff;
+    color: #3a5485;
 }
 
 .content#source {}
@@ -202,5 +202,9 @@ pre {
 .navbar-brand {
     width: 0%;
     height: auto;
+    color: #d10a0a;
 
+}
+.nav-left-sidebar sidebar-dark {
+    background-color: "#00000"; /* Change "your_color_here" to the desired color */
 }
