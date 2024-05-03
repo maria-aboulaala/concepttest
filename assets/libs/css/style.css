@@ -498,6 +498,20 @@ Parsley Varifation
  Padding / Margin
 ---------------------*/
 
+.header-text-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 20px; /* Adjust as needed */
+}
+
+.header-text {
+    margin-bottom: 10px; /* Adjust as needed */
+    margin-right: 10%;
+}
+
 .nopadding {
     padding: 0px;
 }
