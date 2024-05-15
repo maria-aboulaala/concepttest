@@ -3921,7 +3921,7 @@ Pills vertical
 .accrodion-regular .card .card-header {
     font-size: 16px;
     padding: 10px;
-    background-color: transparent;
+    background-color: #DFF5FF;
 }
 
 .accrodion-regular .card .card-header:first-child {
@@ -3934,7 +3934,7 @@ Pills vertical
 }
 
 .accrodion-regular .card .card-header .btn-link:hover {
-    color: #f12357;
+    color: #121481;
     text-decoration: none;
 }
 

@@ -11,14 +11,27 @@
                             data: {
                                 labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
                                 datasets: [{
-                                    label: 'Almonds',
+                                    label: 'Bitcoin',
                                     data: [12, 19, 3, 17, 6, 3, 7],
 
                                     backgroundColor: "rgba(89, 105, 255,0.5)",
                                     borderColor: "rgba(89, 105, 255,0.7)",
                                     borderWidth: 2
                                 }, {
-                                    label: 'Cashew',
+                                    label: 'Native Tokens',
+                                    data: [2, 29, 5, 5, 2, 3, 10],
+                                    backgroundColor: "rgba(255, 64, 123,0.5)",
+                                    borderColor: "rgba(255, 64, 123,0.7)",
+                                    borderWidth: 2
+                                },
+                                {
+                                    label: 'Prudent',
+                                    data: [2, 29, 5, 5, 2, 3, 10],
+                                    backgroundColor: "rgba(255, 64, 123,0.5)",
+                                    borderColor: "rgba(255, 64, 123,0.7)",
+                                    borderWidth: 2
+                                },{
+                                    label: 'Risky',
                                     data: [2, 29, 5, 5, 2, 3, 10],
                                     backgroundColor: "rgba(255, 64, 123,0.5)",
                                     borderColor: "rgba(255, 64, 123,0.7)",
@@ -68,23 +81,36 @@
                         type: 'line',
 
                         data: {
-                            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-, // Changed to months
+                            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], // Changed to months
 
                             datasets: [{
-                                label: 'Almonds',
-                                data: [12, 19, 3, 17, 6, 3, 7, 10, 5,5, 4, 8 ],
+                                label: 'Bitcoin',
+                                data: [12, 19, 3, 17, 6, 3, 7],
 
-                                // backgroundColor: "rgba(0, 0, 0, 0.7)",
-                                borderColor: "rgba(0, 0, 0, 0.7)",
-                                borderWidth: 2
-                            }, {
-                                label: 'Cashew',
-                                data: [2, 29, 5, 5, 2, 3, 10, 8, 9, 10, 4, 5],
-                                // backgroundColor: "rgba(255, 64, 123,0.5)",
+                                backgroundColor: "transparent",
                                 borderColor: "rgba(89, 105, 255,0.7)",
                                 borderWidth: 2
+                            }, {
+                                label: 'Native Tokens',
+                                data: [2, 29, 5, 5, 2, 3, 10],
+                                backgroundColor: "rgba(255, 64, 123,0.5)",
+                                borderColor: "rgba(255, 64, 123,0.7)",
+                                borderWidth: 2
+                            },
+                            {
+                                label: 'Prudent',
+                                data: [2, 29, 5, 5, 2, 3, 10],
+                                backgroundColor: "rgba(255, 64, 123,0.5)",
+                                borderColor: "rgba(255, 64, 123,0.7)",
+                                borderWidth: 2
+                            },{
+                                label: 'Risky',
+                                data: [2, 29, 5, 5, 2, 3, 10],
+                                backgroundColor: "rgba(255, 64, 123,0.5)",
+                                borderColor: "rgba(255, 64, 123,0.7)",
+                                borderWidth: 2
                             }]
+
 
                         },
                         options: {
@@ -130,17 +156,30 @@
                     data: {
                         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
                         datasets: [{
-                            label: 'Almonds',
+                            label: 'Bitcoin',
                             data: [12, 19, 3, 17, 6, 3, 7],
 
-                            // backgroundColor: "rgba(0, 0, 0, 0.7)",
-                            borderColor: "rgba(0, 0, 0, 0.7)",
+                            backgroundColor: null,
+                            borderColor: "rgba(89, 105, 255,0.7)",
                             borderWidth: 2
                         }, {
-                            label: 'Cashew',
+                            label: 'Native Tokens',
                             data: [2, 29, 5, 5, 2, 3, 10],
                             // backgroundColor: "rgba(255, 64, 123,0.5)",
-                            borderColor: "rgba(89, 105, 255,0.7)",
+                            borderColor: "rgba(255, 64, 123,0.7)",
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Prudent',
+                            data: [2, 29, 5, 5, 2, 3, 10],
+                            // backgroundColor: "rgba(255, 64, 123,0.5)",
+                            borderColor: "rgba(255, 64, 123,0.7)",
+                            borderWidth: 2
+                        },{
+                            label: 'Risky',
+                            data: [2, 29, 5, 5, 2, 3, 10],
+                            // backgroundColor: "rgba(255, 64, 123,0.5)",
+                            borderColor: "rgba(255, 64, 123,0.7)",
                             borderWidth: 2
                         }]
 
@@ -188,19 +227,33 @@
                 data: {
                     labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
                     datasets: [{
-                        label: 'Almonds',
+                        label: 'Bitcoin',
                         data: [12, 19, 3, 17, 6, 3, 7],
 
-                        // backgroundColor: "rgba(0, 0, 0, 0.7)",
-                        borderColor: "rgba(0, 0, 0, 0.7)",
-                        borderWidth: 2
-                    }, {
-                        label: 'Cashew',
-                        data: [2, 29, 5, 5, 2, 3, 10],
-                        // backgroundColor: "rgba(255, 64, 123,0.5)",
+                        backgroundColor: "rgba(89, 105, 255,0.5)",
                         borderColor: "rgba(89, 105, 255,0.7)",
                         borderWidth: 2
+                    }, {
+                        label: 'Native Tokens',
+                        data: [2, 29, 5, 5, 2, 3, 10],
+                        backgroundColor: "rgba(255, 64, 123,0.5)",
+                        borderColor: "rgba(255, 64, 123,0.7)",
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Prudent',
+                        data: [2, 29, 5, 5, 2, 3, 10],
+                        backgroundColor: "rgba(255, 64, 123,0.5)",
+                        borderColor: "rgba(255, 64, 123,0.7)",
+                        borderWidth: 2
+                    },{
+                        label: 'Risky',
+                        data: [2, 29, 5, 5, 2, 3, 10],
+                        backgroundColor: "rgba(255, 64, 123,0.5)",
+                        borderColor: "rgba(255, 64, 123,0.7)",
+                        borderWidth: 2
                     }]
+
 
                 },
                 options: {
@@ -246,17 +299,30 @@ if ($('#chartjs_line2019').length) {
             data: {
                 labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
                 datasets: [{
-                    label: 'Almonds',
+                    label: 'Bitcoin',
                     data: [12, 19, 3, 17, 6, 3, 7],
 
-                    // backgroundColor: "rgba(0, 0, 0, 0.7)",
-                    borderColor: "rgba(0, 0, 0, 0.7)",
+                    backgroundColor: "transparent",
+                    borderColor: "#7B113A",
                     borderWidth: 2
                 }, {
-                    label: 'Cashew',
+                    label: 'Native Tokens',
                     data: [2, 29, 5, 5, 2, 3, 10],
-                    // backgroundColor: "rgba(255, 64, 123,0.5)",
-                    borderColor: "rgba(89, 105, 255,0.7)",
+                    backgroundColor: "transparent",
+                    borderColor: "#150E56",
+                    borderWidth: 2
+                },
+                {
+                    label: 'Prudent',
+                    data: [2, 29, 5, 5, 2, 3, 10],
+                    backgroundColor: "transparent",
+                    borderColor: "#1597BB",
+                    borderWidth: 2
+                },{
+                    label: 'Risky',
+                    data: [2, 29, 5, 5, 2, 3, 10],
+                    backgroundColor: "transparent",
+                    borderColor: "#8FD6E1",
                     borderWidth: 2
                 }]
 
