@@ -76,7 +76,20 @@
 
             if ($('#chartjs_line2008').length) {
                 var ctx = document.getElementById('chartjs_line2008').getContext('2d');
-
+                $.getJSON('data2008.json', function(data) {
+                    var labels = Object.keys(data); // Obtenez les mois depuis les clés du JSON
+                    var bitcoinData = [];
+                    var nativeTokensData = [];
+                    var prudentData = [];
+                    var riskyData = [];
+                
+                    // Remplir les tableaux de données
+                    labels.forEach(function(month) {
+                        bitcoinData.push(data[month].bitcoin);
+                        nativeTokensData.push(data[month]['native-tokens']);
+                        prudentData.push(data[month].prudent);
+                        riskyData.push(data[month].risky);
+                    });
                 var myChart = new Chart(ctx, {
                         type: 'line',
 
@@ -86,28 +99,28 @@
                             datasets: [{
                                 label: 'Bitcoin',
                                 data: [12, 19, 3, 17, 6, 3, 7],
-
+            
                                 backgroundColor: "transparent",
-                                borderColor: "rgba(89, 105, 255,0.7)",
+                                borderColor: "#7B113A",
                                 borderWidth: 2
                             }, {
                                 label: 'Native Tokens',
                                 data: [2, 29, 5, 5, 2, 3, 10],
-                                backgroundColor: "rgba(255, 64, 123,0.5)",
-                                borderColor: "rgba(255, 64, 123,0.7)",
+                                backgroundColor: "transparent",
+                                borderColor: "#150E56",
                                 borderWidth: 2
                             },
                             {
                                 label: 'Prudent',
                                 data: [2, 29, 5, 5, 2, 3, 10],
-                                backgroundColor: "rgba(255, 64, 123,0.5)",
-                                borderColor: "rgba(255, 64, 123,0.7)",
+                                backgroundColor: "transparent",
+                                borderColor: "#1597BB",
                                 borderWidth: 2
                             },{
                                 label: 'Risky',
                                 data: [2, 29, 5, 5, 2, 3, 10],
-                                backgroundColor: "rgba(255, 64, 123,0.5)",
-                                borderColor: "rgba(255, 64, 123,0.7)",
+                                backgroundColor: "transparent",
+                                borderColor: "#8FD6E1",
                                 borderWidth: 2
                             }]
 
@@ -158,28 +171,28 @@
                         datasets: [{
                             label: 'Bitcoin',
                             data: [12, 19, 3, 17, 6, 3, 7],
-
-                            backgroundColor: null,
-                            borderColor: "rgba(89, 105, 255,0.7)",
+        
+                            backgroundColor: "transparent",
+                            borderColor: "#7B113A",
                             borderWidth: 2
                         }, {
                             label: 'Native Tokens',
                             data: [2, 29, 5, 5, 2, 3, 10],
-                            // backgroundColor: "rgba(255, 64, 123,0.5)",
-                            borderColor: "rgba(255, 64, 123,0.7)",
+                            backgroundColor: "transparent",
+                            borderColor: "#150E56",
                             borderWidth: 2
                         },
                         {
                             label: 'Prudent',
                             data: [2, 29, 5, 5, 2, 3, 10],
-                            // backgroundColor: "rgba(255, 64, 123,0.5)",
-                            borderColor: "rgba(255, 64, 123,0.7)",
+                            backgroundColor: "transparent",
+                            borderColor: "#1597BB",
                             borderWidth: 2
                         },{
                             label: 'Risky',
                             data: [2, 29, 5, 5, 2, 3, 10],
-                            // backgroundColor: "rgba(255, 64, 123,0.5)",
-                            borderColor: "rgba(255, 64, 123,0.7)",
+                            backgroundColor: "transparent",
+                            borderColor: "#8FD6E1",
                             borderWidth: 2
                         }]
 
@@ -229,28 +242,28 @@
                     datasets: [{
                         label: 'Bitcoin',
                         data: [12, 19, 3, 17, 6, 3, 7],
-
-                        backgroundColor: "rgba(89, 105, 255,0.5)",
-                        borderColor: "rgba(89, 105, 255,0.7)",
+    
+                        backgroundColor: "transparent",
+                        borderColor: "#7B113A",
                         borderWidth: 2
                     }, {
                         label: 'Native Tokens',
                         data: [2, 29, 5, 5, 2, 3, 10],
-                        backgroundColor: "rgba(255, 64, 123,0.5)",
-                        borderColor: "rgba(255, 64, 123,0.7)",
+                        backgroundColor: "transparent",
+                        borderColor: "#150E56",
                         borderWidth: 2
                     },
                     {
                         label: 'Prudent',
                         data: [2, 29, 5, 5, 2, 3, 10],
-                        backgroundColor: "rgba(255, 64, 123,0.5)",
-                        borderColor: "rgba(255, 64, 123,0.7)",
+                        backgroundColor: "transparent",
+                        borderColor: "#1597BB",
                         borderWidth: 2
                     },{
                         label: 'Risky',
                         data: [2, 29, 5, 5, 2, 3, 10],
-                        backgroundColor: "rgba(255, 64, 123,0.5)",
-                        borderColor: "rgba(255, 64, 123,0.7)",
+                        backgroundColor: "transparent",
+                        borderColor: "#8FD6E1",
                         borderWidth: 2
                     }]
 
