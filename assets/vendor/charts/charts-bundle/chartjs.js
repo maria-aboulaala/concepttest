@@ -76,20 +76,7 @@
 
             if ($('#chartjs_line2008').length) {
                 var ctx = document.getElementById('chartjs_line2008').getContext('2d');
-                $.getJSON('data2008.json', function(data) {
-                    var labels = Object.keys(data); // Obtenez les mois depuis les clés du JSON
-                    var bitcoinData = [];
-                    var nativeTokensData = [];
-                    var prudentData = [];
-                    var riskyData = [];
                 
-                    // Remplir les tableaux de données
-                    labels.forEach(function(month) {
-                        bitcoinData.push(data[month].bitcoin);
-                        nativeTokensData.push(data[month]['native-tokens']);
-                        prudentData.push(data[month].prudent);
-                        riskyData.push(data[month].risky);
-                    });
                 var myChart = new Chart(ctx, {
                         type: 'line',
 
